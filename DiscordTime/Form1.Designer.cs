@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			TimestampLabel = new Label();
 			button1 = new Button();
 			dateTimePicker1 = new DateTimePicker();
@@ -118,6 +119,7 @@
 			ClientSize = new Size(323, 176);
 			Controls.Add(flowLayoutPanel1);
 			FormBorderStyle = FormBorderStyle.SizableToolWindow;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Name = "Form1";
 			Text = "Discord Timestamp Generator";
 			flowLayoutPanel1.ResumeLayout(false);
