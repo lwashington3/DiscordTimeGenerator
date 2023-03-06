@@ -12,11 +12,12 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/lwashington3/DiscordTimeGenerator/</RepositoryUrl>
-    <ApplicationIcon>Resources\discordtime.ico</ApplicationIcon>
+    <StartupObject>DiscordTime.Program</StartupObject>
+    <ApplicationIcon>discordtime.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Resources\discordtime.ico" />
+    <Content Include="discordtime.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +40,10 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>
