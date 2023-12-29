@@ -1,0 +1,65 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:DiscordTime.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="100"
+        x:Class="DiscordTime.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/discordtime.ico"
+        Title="Discord Timestamp Generator"
+        Background="#5662F6"
+        Topmost="True"
+        Loaded="Window_OnLoaded">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<StackPanel>
+		<Border Margin="5">
+			<StackPanel Orientation="Horizontal">
+				<CalendarDatePicker Name="Date"
+				    SelectedDateFormat="Custom"
+				    CustomDateFormatString="dddd, MMMM dd, yyyy"
+				    SelectedDateChanged="Date_OnSelectedDateChanged"
+				    Height="{Binding DateTimeHeight}"/>
+				<Separator Width="10"/>
+				<TimePicker Name="Time"
+				    ClockIdentifier="12HourClock"
+				    SelectedTimeChanged="Time_OnSelectedTimeChanged"
+				    Height="{Binding DateTimeHeight}"/>
+			</StackPanel>
+		</Border>
+		<DockPanel VerticalAlignment="Center">
+			<ComboBox Name="DateFormats"
+				DockPanel.Dock="Left"
+				SelectedIndex="0"
+				ItemsSource="{Binding FormatsList}"
+				SelectionChanged="Date_OnSelectedDateChanged"
+				Height="{Binding DateTimeHeight}">
+				<ComboBox.ItemTemplate>
+					<DataTemplate>
+						<TextBlock Text="{Binding Text}"/>
+					</DataTemplate>
+				</ComboBox.ItemTemplate>
+			</ComboBox>
+			<StackPanel
+				Orientation="Horizontal">
+				<SelectableTextBlock Name="Timestamp"
+				                     HorizontalAlignment="Center"
+				                     FontSize="{Binding TimestampHeight}"
+				                     VerticalAlignment="Center"/>
+				<Button Click="Button_OnClick">
+					<Image Width="{Binding DateTimeHeight}"
+					       Height="{Binding TimestampHeight}"
+					       VerticalAlignment="Center"
+					       Source="/Assets/copy-icon.png"/>
+				</Button>
+			</StackPanel>
+		</DockPanel>
+	</StackPanel>
+
+</Window>

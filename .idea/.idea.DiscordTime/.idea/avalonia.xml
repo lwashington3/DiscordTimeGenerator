@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="DiscordTime/App.axaml" value="DiscordTime/DiscordTime.csproj" />
+        <entry key="DiscordTime/Views/MainWindow.axaml" value="DiscordTime/DiscordTime.csproj" />
+        <entry key="GetStartedApp/MainView.axaml" value="GetStartedApp/GetStartedApp.csproj" />
+        <entry key="GetStartedApp/Views/MainWindow.axaml" value="GetStartedApp/GetStartedApp.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
