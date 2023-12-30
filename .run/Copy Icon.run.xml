@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Copy Icon" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="cp Assets/discordtime.ico bin/linux-x64/DiscordTime/usr/share/icons" />
+    <option name="SCRIPT_TEXT" value="cp Assets/discordtime.png bin/linux-x64/DiscordTime/usr/share/pixmaps/" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />
