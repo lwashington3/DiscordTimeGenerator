@@ -1,0 +1,7 @@
+chmod +x /usr/local/bin/DiscordTime/DiscordTime
+
+if [ ! -f "/usr/local/bin/discordtime" ]; then
+	ln -s /usr/local/bin/DiscordTime/DiscordTime /usr/local/bin/discordtime
+fi
+
+exit 0

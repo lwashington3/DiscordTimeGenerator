@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Discord Timestamp Generator
+Comment=Create timezone sensitive objects for Discord.
+Exec=/usr/local/bin/discordtime %U
+Icon=discordtime
+Terminal=false
+Type=Application
+X-KDE-RunOnDiscreteGpu=true

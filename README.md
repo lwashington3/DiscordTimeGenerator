@@ -8,4 +8,4 @@ Created an application to make it easy to generate Discord Timestamps.
 - Allows users to expand to a full date with taking up space.
 
 ## Install
-Look at the [README](installs/README.md) in the installs directory to find the instructions for your operating system.
+Look at the [README](installs/README.md) in the [installs](intsalls) directory to find the instructions for your operating system.

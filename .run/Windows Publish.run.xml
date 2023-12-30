@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Windows Publish" type="DotNetFolderPublish" factoryName="Publish to folder">
-    <riderPublish configuration="Release" platform="Any CPU" runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/DiscordTime/bin/win-x64" target_framework="net7.0" trim_unused_assemblies="true" uuid_high="-1021651659277710880" uuid_low="-5447630188611670010" />
+    <riderPublish configuration="Release" platform="Any CPU" produce_single_file="true" runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/DiscordTime/bin/win-x64" target_framework="net7.0" trim_unused_assemblies="true" uuid_high="-1021651659277710880" uuid_low="-5447630188611670010" />
     <method v="2" />
   </configuration>
 </component>

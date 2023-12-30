@@ -1,0 +1,6 @@
+Package: DiscordTime
+Version: 1.0.0
+Section: development
+Architecture: all
+Maintainer: l.washingtoniii.27@gmail.com
+Description: A notification service to remind about homework
